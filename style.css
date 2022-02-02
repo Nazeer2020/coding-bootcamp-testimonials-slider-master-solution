@@ -20,8 +20,8 @@ img {
 
 .silder {
   position: relative;
-  height: 90vh;
-  margin: 7% 7% 0 7%;
+  height: 75vh;
+  margin: 20% 7% 0 7%;
   text-align: center;
   overflow: hidden;
 }
@@ -33,7 +33,7 @@ img {
 }
 
 .slide_img {
-  width: 350px;
+  width: 80%;
   height: 350px;
   border-radius: 10px;
   box-shadow: 0 5px 10px #555;
@@ -44,13 +44,13 @@ img {
   background-image: url("./images/pattern-quotes.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  margin: 25px 0 0 0;
-  padding: 25px 0 0 0;
+  margin: 50px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 .slide_para-1 {
   margin: 20px 0;
-  font-size: 18px;
+  font-size: 24px;
   color: hsl(240, 38%, 20%);
   font-weight: 300;
 }
@@ -66,7 +66,7 @@ img {
 
 .shape--1 {
   position: absolute;
-  top: 3%;
+  top: 7%;
   z-index: -9;
   left: 5%;
   right: 5%;
@@ -83,9 +83,9 @@ img {
   justify-content: space-around;
   text-align: center;
   margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 0;
+  right: 0;
   box-shadow: 0 0 10px #999;
 }
 
@@ -99,13 +99,14 @@ button {
 
 @media (min-width: 700px) {
   .silder {
-    height: 70vh;
+    margin: 7% 7% 0 7%;
   }
   .slide {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-column-gap: -200px;
+    height: 40vh;
   }
 
   .slider_image {
@@ -119,20 +120,28 @@ button {
     text-align: left;
     z-index: 9999;
     width: 125%;
-    background-position: left top;
+    background-position: 10% top;
+  }
+
+  .btn--container {
+    top: 550px;
+    left: 35%;
   }
 
   .slide_img {
     width: 80%;
-    height: 80%;
+    height: 550px;
   }
   .slide_para-1 {
     font-size: 32px;
   }
 
   .shape--1 {
-    top: 7%;
-    left: 42%;
+    top: 10%;
+    left: 55%;
+    right: 3%;
+    bottom: 0;
+    height: 600px;
   }
 
   .silder_text_sub {
@@ -141,37 +150,5 @@ button {
 
   .slide_para-2 {
     margin-right: 20px;
-  }
-}
-
-@media (min-width: 700px) {
-  .btn--container {
-    top: 60%;
-    left: 67%;
-    transform: translate(-67%, -60%);
-  }
-}
-
-@media (min-width: 900px) {
-  .btn--container {
-    top: 65%;
-    left: 67%;
-    transform: translate(-67%, -65%);
-  }
-}
-
-@media (min-width: 1200px) {
-  .btn--container {
-    top: 75%;
-    left: 67%;
-    transform: translate(-67%, -75%);
-  }
-}
-
-@media (min-width: 1450px) {
-  .btn--container {
-    top: 85%;
-    left: 67%;
-    transform: translate(-67%, -85%);
   }
 }
