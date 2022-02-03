@@ -99,7 +99,7 @@ button {
 
 @media (min-width: 700px) {
   .silder {
-    height: 75vh;
+    height: 80vh;
     margin: 7% 7% 0 7%;
   }
   .slide {
